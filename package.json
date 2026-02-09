@@ -1,15 +1,24 @@
 {
-  "name": "google-sheets",
+  "name": "@mattfishcodes/google-sheets",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/index.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.ts",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "vite build && tsc",
     "format": "prettier --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Matthew Fisher",
+    "email": "mattfishcodes@gmail.com"
+  },
   "license": "ISC",
   "packageManager": "pnpm@10.29.1",
   "devDependencies": {
